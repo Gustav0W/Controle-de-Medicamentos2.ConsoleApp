@@ -32,7 +32,7 @@ public class ControladorFornecedor : Controller
 
         repositorioFornecedor.CadastrarRegistro(novoFornecedor);
 
-        NotificacaoViewModels notificacaoVM = new NotificacaoViewModels(
+        NotificacaoViewModel notificacaoVM = new NotificacaoViewModel(
             "Fornecedor Cadastrado!",
             $"O registro \"{novoFornecedor.Nome}\" foi cadastrado com sucesso!"
         );
@@ -62,7 +62,7 @@ public class ControladorFornecedor : Controller
 
         repositorioFornecedor.EditarRegistro(id, registroEditado);
 
-        NotificacaoViewModels notificacaoVM = new NotificacaoViewModels(
+        NotificacaoViewModel notificacaoVM = new NotificacaoViewModel(
             "Fornecedor Editado!",
             $"O registro \"{registroEditado.Nome}\" foi editado com sucesso!"
         );
@@ -88,7 +88,7 @@ public class ControladorFornecedor : Controller
     {
         repositorioFornecedor.ExcluirRegistro(id);
 
-        NotificacaoViewModels notificacaoVM = new NotificacaoViewModels(
+        NotificacaoViewModel notificacaoVM = new NotificacaoViewModel(
             "Fornecedor Excluído!",
             "O registro foi excluído com sucesso!"
         );

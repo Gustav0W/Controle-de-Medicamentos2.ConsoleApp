@@ -58,7 +58,7 @@ public class ControladorRequisicaoMedicamento : Controller
 
         repositorioRequisicaoMedicamento.CadastrarRequisicaoEntrada(registro);
 
-        NotificacaoViewModels notificacaoVM = new NotificacaoViewModels(
+        NotificacaoViewModel notificacaoVM = new NotificacaoViewModel(
             "Requisição de Entrada Cadastrada!",
             $"O estoque do medicamento foi atualizado!"
         );
@@ -134,7 +134,7 @@ public class ControladorRequisicaoMedicamento : Controller
 
         repositorioRequisicaoMedicamento.CadastrarRequisicaoSaida(entidade);
 
-        var notificacaoVM = new NotificacaoViewModels(
+        var notificacaoVM = new NotificacaoViewModel(
             "Requisição de Saída Cadastrada!",
             $"O estoque do medicamento foi atualizado!"
         );

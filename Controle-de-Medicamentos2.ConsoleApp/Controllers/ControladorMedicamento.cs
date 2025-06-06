@@ -40,7 +40,7 @@ public class ControladorMedicamento : Controller
 
         repositorioMedicamento.CadastrarRegistro(registro);
 
-        NotificacaoViewModels notificacaoVM = new NotificacaoViewModels(
+        NotificacaoViewModel notificacaoVM = new NotificacaoViewModel(
             "Medicamento Cadastrado!",
             $"O registro \"{registro.Nome}\" foi cadastrado com sucesso!"
         );
@@ -75,7 +75,7 @@ public class ControladorMedicamento : Controller
 
         repositorioMedicamento.EditarRegistro(id, registroEditado);
 
-        NotificacaoViewModels notificacaoVM = new NotificacaoViewModels(
+        NotificacaoViewModel notificacaoVM = new NotificacaoViewModel(
             "Medicamento Editado!",
             $"O registro \"{registroEditado.Nome}\" foi editado com sucesso!"
         );
@@ -101,7 +101,7 @@ public class ControladorMedicamento : Controller
     {
         repositorioMedicamento.ExcluirRegistro(id);
 
-        NotificacaoViewModels notificacaoVM = new NotificacaoViewModels(
+        NotificacaoViewModel notificacaoVM = new NotificacaoViewModel(
             "Medicamento Excluído!",
             "O registro foi excluído com sucesso!"
         );

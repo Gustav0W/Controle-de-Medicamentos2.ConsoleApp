@@ -32,7 +32,7 @@ public class ControladorPaciente : Controller
 
         repositorioPaciente.CadastrarRegistro(novoPaciente);
 
-        NotificacaoViewModels notificacaoVM = new NotificacaoViewModels(
+        NotificacaoViewModel notificacaoVM = new NotificacaoViewModel(
             "Paciente Cadastrado!",
             $"O registro \"{novoPaciente.Nome}\" foi cadastrado com sucesso!"
         );
@@ -62,7 +62,7 @@ public class ControladorPaciente : Controller
 
         repositorioPaciente.EditarRegistro(id, registroEditado);
 
-        NotificacaoViewModels notificacaoVM = new NotificacaoViewModels(
+        NotificacaoViewModel notificacaoVM = new NotificacaoViewModel(
             "Paciente Editado!",
             $"O registro \"{registroEditado.Nome}\" foi editado com sucesso!"
         );
@@ -88,7 +88,7 @@ public class ControladorPaciente : Controller
     {
         repositorioPaciente.ExcluirRegistro(id);
 
-        NotificacaoViewModels notificacaoVM = new NotificacaoViewModels(
+        NotificacaoViewModel notificacaoVM = new NotificacaoViewModel(
             "Paciente Excluído!",
             "O registro foi excluído com sucesso!"
         );

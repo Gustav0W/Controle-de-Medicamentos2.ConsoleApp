@@ -102,7 +102,7 @@ public class ControladorPrescricao : Controller
 
             repositorioPrescricao.CadastrarRegistro(novoRegistro);
 
-            NotificacaoViewModels notificacaoVM = new NotificacaoViewModels(
+            NotificacaoViewModel notificacaoVM = new NotificacaoViewModel(
                 "Prescrição Cadastrada!",
                 "A prescrição foi criada com sucesso!"
             );

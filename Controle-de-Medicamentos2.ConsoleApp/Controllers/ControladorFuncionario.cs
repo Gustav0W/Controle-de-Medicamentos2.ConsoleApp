@@ -33,7 +33,7 @@ public class ControladorFuncionario : Controller
 
         repositorioFuncionario.CadastrarRegistro(novoFuncionario);
 
-        NotificacaoViewModels notificacaoVM = new NotificacaoViewModels(
+        NotificacaoViewModel notificacaoVM = new NotificacaoViewModel(
             "Funcionário Cadastrado!",
             $"O registro \"{novoFuncionario.Nome}\" foi cadastrado com sucesso!"
         );
@@ -63,7 +63,7 @@ public class ControladorFuncionario : Controller
 
         repositorioFuncionario.EditarRegistro(id, registroEditado);
 
-        NotificacaoViewModels notificacaoVM = new NotificacaoViewModels(
+        NotificacaoViewModel notificacaoVM = new NotificacaoViewModel(
             "Funcionário Editado!",
             $"O registro \"{registroEditado.Nome}\" foi editado com sucesso!"
         );
@@ -89,7 +89,7 @@ public class ControladorFuncionario : Controller
     {
         repositorioFuncionario.ExcluirRegistro(id);
 
-        NotificacaoViewModels notificacaoVM = new NotificacaoViewModels(
+        NotificacaoViewModel notificacaoVM = new NotificacaoViewModel(
             "Funcionário Excluído!",
             "O registro foi excluído com sucesso!"
         );

@@ -1,4 +1,4 @@
-﻿﻿:root {
+﻿:root {
     --fundo-principal: #1e1e1e;
     --fundo-secundario: #2c2c2e;
     --cor-principal: #DB56EB;
@@ -59,10 +59,11 @@ header {
 }
 
 main {
-    padding: 0 200px;
+    padding: 0 100px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -70,6 +71,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .card {
